@@ -7,11 +7,11 @@ export default class Projects {
         const section = document.createElement("section");
         section.classList.add("section-wrapper");
         section.classList.add("projects-wrapper");
-        const title = `
+        const template = `
             <h3><span>P</span>rojekte</h3>
 
         `;
-        section.innerHTML = title;
+        section.innerHTML = template;
         this.app.append(section);
     }
 }
