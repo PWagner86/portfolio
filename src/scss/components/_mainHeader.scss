@@ -1,0 +1,48 @@
+@use '../helper/' as *;
+
+.main-header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+    .title-wrapper{
+        width: 50%;
+        @include flex(space-around, flex-start, column);
+
+        h1{
+            font-size: 15vmin;
+            padding: 0 2rem;
+            text-shadow: -20px -20px 10px rgb(10, 10, 10);
+            color: $matBlue;
+        }
+
+        h2{
+            font-size: 10vmin;
+            padding: 0 2rem;
+            text-shadow: -20px -20px 10px rgb(10, 10, 10);
+            color: $matBlue;
+        }
+
+        span{
+            color: $lightGrey;
+        }
+
+    }
+
+    .pic-wrapper{
+        width: 50%;
+        @include flex(flex-end, center, row);
+
+        .pic{
+            width: 40vmin;
+            height: 40vmin;
+            background: url(../../../pic/ich.jpg);
+            background-size: cover;
+            background-position: center center;
+            background-repeat: none;
+            border-radius: 50%;
+            margin-right: 2rem;
+            box-shadow: -20px -20px 30px rgb(10, 10, 10);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use './helper/' as *;
+@use './components/' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    font-family: $mainFont;
+    background: linear-gradient(45deg, $darkGrey, $lightGrey);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}

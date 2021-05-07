@@ -1,0 +1,21 @@
+@use '../helper/' as *;
+
+.section-wrapper{
+    height: 100vh;
+    margin-top: 3rem;
+
+    h3{
+        width: 100%;
+        @include flex(center, center, row);
+        background: black;
+        color: $lightGrey;
+        font-size: 7vmin;
+        font-weight: 100;
+        padding: 2rem 0;
+        text-transform: uppercase;
+    }
+
+    span{
+        color: $matBlue;
+    }
+}
