@@ -8,7 +8,7 @@ export default class Header{
     }
 
     private createHeader(): void{
-        const header: HTMLElement = document.createElement("header");
+        const header = document.createElement("header") as HTMLElement;
         header.classList.add("main-header");
         const template: string = `
         <div class="title-wrapper">

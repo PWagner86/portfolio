@@ -1,0 +1,16 @@
+@use '../helper/' as *;
+
+.skills-container{  
+    @include flex(flex-start, center, row);
+
+    ul{
+        @include flex(space-around, flex-start, column);
+        height: 100%;
+        padding: 0 5rem;
+
+        li{
+            font-size: 4vmin;
+            color: $lightGrey;
+        }
+    }
+}

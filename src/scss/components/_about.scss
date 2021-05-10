@@ -1,0 +1,11 @@
+@use '../helper/' as *;
+
+.about-container{
+    @include flex(center, center, row);
+
+    p{  
+        width: 80%;
+        font-size: 5vmin;
+        color: $lightGrey;
+    }
+}

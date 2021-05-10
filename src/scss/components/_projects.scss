@@ -1,0 +1,25 @@
+@use '../helper/' as *;
+
+.project-container{
+    @include flex(space-around, center, row);
+
+    .project{
+        margin: 2rem;
+        width: 40vmin;
+        height: 40vmin;
+        background: black;
+        @include flex(center, center, row);
+        text-align: center;
+        font-size: 3vmin;
+        color: $matBlue;
+        border: solid 3px $lightGrey;
+
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .project-container{
+        @include flex(space-around, center, column);
+    }
+
+}
