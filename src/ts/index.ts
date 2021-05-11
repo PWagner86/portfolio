@@ -17,7 +17,7 @@ const emailInput = document.querySelector(".email") as HTMLInputElement;
 const text = document.querySelector(".text") as HTMLTextAreaElement;
 const allMessages = document.querySelector(".all-messages") as HTMLDivElement;
 
-fetch('../../messages.json')
+fetch('../messages.json')
 .then(res => res.json())
 .then(data => {
     console.log(data);

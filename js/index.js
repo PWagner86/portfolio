@@ -14,7 +14,7 @@ const nameInput = document.querySelector(".name");
 const emailInput = document.querySelector(".email");
 const text = document.querySelector(".text");
 const allMessages = document.querySelector(".all-messages");
-fetch('../../messages.json')
+fetch('../messages.json')
     .then(res => res.json())
     .then(data => {
     console.log(data);
