@@ -16,6 +16,7 @@ export default class Skills {
                 <li>JavaScript / Typescript</li>
                 <li>Node.js</li>
                 <li>Angular / Angular CLI (Basics)</li>
+                <li>React (Basics)</li>
                 <li>PHP</li>
                 <li>MySQL</li>
             </ul>

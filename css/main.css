@@ -133,6 +133,92 @@
   color: #ebdfdf;
 }
 
+.message-wrapper .message-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.message-wrapper .message-container .messages {
+  height: 90%;
+}
+.message-wrapper .message-container .messages h4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  font-size: 3.5vmin;
+  padding: 0 1rem;
+}
+.message-wrapper .message-container .messages .all-messages {
+  overflow-y: auto;
+}
+.message-wrapper .message-container .messages .all-messages div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  font-size: 3vmin;
+}
+.message-wrapper .message-container form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 50vmin;
+  height: 90%;
+  border: solid 2px #ebdfdf;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.message-wrapper .message-container form h4 {
+  font-size: 3.5vmin;
+}
+.message-wrapper .message-container form label {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #0e8fda;
+  font-size: 3vmin;
+}
+.message-wrapper .message-container form label input,
+.message-wrapper .message-container form label textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  background: none;
+  border: solid 2px #1b1b1b;
+  border-radius: 3px;
+  font-size: 3vmin;
+  color: #ebdfdf;
+  padding: 0.5rem;
+}
+.message-wrapper .message-container form .msg-btn {
+  width: 90%;
+  background: #1b1b1b;
+  border: solid 2px #ebdfdf;
+  border-radius: 3px;
+  font-size: 3vmin;
+  padding: 0.5rem 0;
+  color: #ebdfdf;
+  transition: ease-in-out 0.3s;
+}
+.message-wrapper .message-container form .msg-btn:hover {
+  background: #0e8fda;
+  border: solid 2px #1b1b1b;
+}
+
+@media screen and (max-width: 990px) {
+  .message-wrapper .message-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -154,8 +240,10 @@ a {
   text-decoration: none;
 }
 
-button {
+button,
+input[type=submit] {
   cursor: pointer;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

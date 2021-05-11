@@ -1,0 +1,84 @@
+@use '../helper/' as *;
+
+.message-wrapper{
+
+    .message-container{
+        @include flex(space-around, center, row);
+
+        .messages{
+            height: 90%;
+
+            h4{
+                @include flex(flex-start, center, row);
+                font-size: 3.5vmin;
+                padding: 0 1rem;
+            }
+
+            .all-messages{
+                overflow-y: auto;
+
+                div{
+                    width: 100%;
+                    @include flex(center, flex-start, column);
+                    padding: 2rem 1rem;
+                    font-size: 3vmin;
+                }
+            }
+        }
+
+        form{
+            @include flex(space-around, center, column);
+            width: 50vmin;
+            height: 90%;
+            border: solid 2px $lightGrey;
+            border-radius: 5px;
+            padding: 1rem;
+
+            h4{
+                font-size: 3.5vmin;
+            }
+
+            label{
+                width: 90%;
+                @include flex(center, flex-start, column);
+                color: $matBlue;
+                font-size: 3vmin;
+                
+                input,
+                textarea{
+                    width: 100%;
+                    margin: 0.5rem 0;
+                    background: none;
+                    border: solid 2px $darkGrey;
+                    border-radius: 3px;
+                    font-size: 3vmin;
+                    color: $lightGrey;
+                    padding: 0.5rem;
+                }
+            }
+
+            .msg-btn{
+                width: 90%;
+                background: $darkGrey;
+                border: solid 2px $lightGrey;
+                border-radius: 3px;
+                font-size: 3vmin;
+                padding: 0.5rem 0;
+                color: $lightGrey;
+                transition: ease-in-out 0.3s;
+
+                &:hover{
+                    background: $matBlue;
+                    border: solid 2px $darkGrey;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    .message-wrapper .message-container{
+        @include flex(space-around, center, column);
+    }
+}
