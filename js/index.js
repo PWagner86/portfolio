@@ -18,8 +18,8 @@ fetch('../../messages.json')
     .then(res => res.json())
     .then(data => {
     console.log(data);
-    const div = document.createElement("div");
     data.messages.forEach((message) => {
+        const div = document.createElement("div");
         const template = `
         <strong>${message.name}, ${message.date}</strong>
         <p>${message.text}</p>
